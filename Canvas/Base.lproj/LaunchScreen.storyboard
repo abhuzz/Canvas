@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canvas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-0C-ahf">
+                                <rect key="frame" x="124" y="10" width="127.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fgv-3h-swX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.4807227603" green="0.63701340870000001" blue="0.68521292099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="krn-0Q-swh">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95414831639999997" green="1" blue="0.90464390640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="krn-0Q-swh" secondAttribute="trailing" id="QkK-G7-TfW"/>
+                            <constraint firstItem="RmB-0C-ahf" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-10" id="UXa-iV-l2D"/>
+                            <constraint firstItem="RmB-0C-ahf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xbi-dr-wRq"/>
+                            <constraint firstItem="krn-0Q-swh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="j5f-vD-dhN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="krn-0Q-swh" secondAttribute="bottom" id="ysc-zl-hwf"/>
+                            <constraint firstItem="krn-0Q-swh" firstAttribute="top" secondItem="RmB-0C-ahf" secondAttribute="bottom" id="zNJ-8I-Lxw"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="112.8" y="187.55622188905548"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Welcome" width="639" height="1100"/>
+    </resources>
 </document>
